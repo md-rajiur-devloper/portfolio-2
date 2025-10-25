@@ -1,0 +1,203 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: #1F6FEB;
+    --title-color: #fff;
+    --peragraph-color: #e5e7eb;
+    --card-color: #161d27;
+
+}
+
+/* Hader Page Start */
+.main-hader {
+    background-color: 0, 0, 0, 0.5;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.main-hader .main-logo {
+    color: var(--peragraph-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.main-hader .my-list .my-li-style {
+    padding: 10px 20px;
+    color: #fff !important;
+    transition: 0.4s;
+    opacity: 1;
+    position: relative;
+}
+
+.main-hader li>a::after {
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: var(--text-color);
+    position: absolute;
+    /* bottom: -38px; */
+    left: 50%;
+    top: 55px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+/* .main-hader .my-list .my-li-style:hover {
+    width: calc(100% + 20px);
+} */
+
+.main-hader li>a:hover::after {
+    border-bottom: 3px solid var(--text-color);
+    /* color: var(--text-color); */
+    width: calc(100%);
+    top: 55px;
+    border-radius: 10px;
+}
+/* . Page Title Section. */
+
+.PageTitleSection {
+    background: url(../assets/images/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+/* .PageTitleSection::before{
+    content: ' ';
+    background: #0000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.PageTitleSection .page-title {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--title-color);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.PageTitleSection .page-title h1>span {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.PageTitleSection .page-title p {
+    line-height: 33px;
+}
+
+
+/* Biopraphy Section */
+
+.main-Biography .Biography-heading {
+    color: var(--title-color);
+}
+
+.main-Biography .mybioGraphy h2 {
+    color: var(--text-color);
+    font-size: 28px;
+}
+
+.main-Biography .mybioGraphy {
+    color: var(--peragraph-color);
+    text-align: justify;
+    margin-top: 60px;
+}
+
+/* Existing Client Section */
+
+.Existing-Client .Existing-ClientHader {
+    color: var(--title-color);
+}
+
+.Existing-Client .card img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--text-color);
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.Existing-Client .card:hover .card-body img{
+   transform:rotateY(180deg);
+   transition: 1.8s;
+}
+.Existing-Client .card:hover .card-body {
+     transform:rotateY(180deg);
+   transition: 1.8s;
+}
+.Existing-Client .card:hover {
+  transform:rotateY(180deg);
+   transition: 1.8s;
+}
+
+.Existing-Client .card h3 {
+    font-size: 28px;
+    color: #0d1117;
+    width: 700;
+}
+
+.Existing-Client .card h4 {
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+.Existing-Client .card {
+    background: var(--card-color);
+    color: var(--peragraph-color);
+}
+
+.Existing-Client .card .card-body h3 {
+    color: var(--title-color);
+}
+
+
+/* Services Section Start */
+.skill-section .skill-title {
+    color: var(--title-color);
+}
+
+.skill-section .card {
+    background-color: #171e29;
+    color: var(--title-color);
+    /* margin-left: 20px; */
+    height: 160px;
+
+}
+
+.skill-section .card:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+    box-shadow: 0.5px 1px 8px #e5e7eb;
+}
+
+.skill-section .card h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.main-footer .copy {
+    color: var(--title-color);
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Family  -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- css Link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+
+</head>
+
+<body>
+    <!-- Hader Section Start -->
+    <header class="main-hader fixed-top navbar navbar-expand-lg fs-5">
+        <!-- <nav class="navbar navbar-expand-lg fs-5"> -->
+            <div class="container ">
+                <a class="navbar-brand main-logo" href="#">Rajiur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto my-list">
+                       <li> <a class="nav-link active my-li-style" aria-current="page" href="index.html">Home</a></li>
+                        <li><a class="nav-link my-li-style" href="about.html">About</a></li>
+                        <li><a class="nav-link my-li-style" href="./portdolio.html">Portfolio</a></li>
+                        <li><a class="nav-link my-li-style" href="./services.html"> Service</a></li>
+                        <li><a class="nav-link my-li-style" href="./contact.html">  Contact</a></li>
+                    </div>
+                </div>
+            </div>
+        <!-- </nav> -->
+    </header>
+
+    <!-- Contact Form  -->
+ <div class="container from-size">
+      <div class="form-container">
+        <h2 class="form-title">Contact Us Today!</h2>
+
+        <!-- Custom message box -->
+        <div id="form-message" class="alert" role="alert"></div>
+
+        <form id="contactForm" class="needs-validation" novalidate>
+          <!-- First Name -->
+          <div class="row mb-4 align-items-center">
+            <label for="firstName" class="col-md-3 col-form-label form-label text-light"
+              >First Name</label
+            >
+            <div class="col-md-9">
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="fas fa-user"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Your First Name"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter your first name.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="row mb-4 align-items-center">
+            <label for="lastName" class="col-md-3 col-form-label form-label text-light"
+              >Last Name</label
+            >
+            <div class="col-md-9">
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="fas fa-user"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Your Last Name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your last name.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Mail -->
+          <div class="row mb-4 align-items-center">
+            <label for="email" class="col-md-3 col-form-label form-label text-light"
+              >E-Mail</label
+            >
+            <div class="col-md-9">
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your E-Mail Address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone # -->
+          <div class="row mb-4 align-items-center">
+            <label for="phone" class="col-md-3 col-form-label form-label text-light"
+              >Phone #</label
+            >
+            <div class="col-md-9">
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="fas fa-phone"></i
+                ></span>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="(+880) 00000000000"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Website -->
+          <div class="row mb-4 align-items-center">
+            <label for="website" class="col-md-3 col-form-label form-label text-light"
+              >Website or domain name</label
+            >
+            <div class="col-md-9">
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="fas fa-globe"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="website"
+                  placeholder="e.g., yourwebsite.com"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Gender -->
+          <div class="row mb-5 align-items-center">
+            <label class="col-md-3 col-form-label form-label text-light for="">Type Your Messages</label>
+            
+
+              <div class="col-md-9">
+              <div class="input-group">
+                 <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <!-- Centered the button --><button
+                type="submit"
+                class="btn btn-warning btn-lg"
+              >
+                Submit <i class="fas fa-paper-plane ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    
+    <footer class="main-footer my-5">
+        <div class="container">
+            <div class="row">
+                <div class="copy text-center fs-5">
+                &copy;2024 Rajiur Rahman. All Rights Reserved.
+            </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

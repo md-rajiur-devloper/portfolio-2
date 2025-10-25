@@ -1,0 +1,136 @@
+/* Custom "Gorjiyas" styles */
+    .from-size{
+        margin-top: 100px;
+    }
+      .form-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color:#2d3748; /* Slightly transparent dark background */
+        padding: 3rem; /* More padding */
+        border-radius: 1.25rem; /* More rounded corners */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5),
+          0 0 0 2px rgba(255, 255, 255, 0.05); /* Stronger, layered shadow for "floating" effect */
+        border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border */
+      }
+
+      .form-title {
+        margin-bottom: 2.5rem; /* More space below title */
+        text-align: center;
+        color: #1F6FEB; /* A striking accent color for the title */
+        font-weight: 700;
+        font-size: 2.5rem; /* Larger title */
+        text-shadow: 0 3px 10px rgba(167, 139, 250, 0.4); /* Subtle glow for title */
+      }
+
+      /* Input group text and icons */
+      .input-group-text {
+        background-color: #1F6FEB; /* Match accent color */
+        border: 1px solid #1F6FEB; /* Solid border with accent color */
+        color: #f9fafb;
+        border-radius: 0.5rem 0 0 0.5rem; /* Match input field border-radius */
+        transition: all 0.3s ease;
+      }
+
+      .form-control,
+      .form-select {
+        background-color: #2d3748; /* Slightly lighter dark for inputs */
+        border: 1px solid #4a5568; /* Subtle border for inputs */
+        color: #f9fafb;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem; /* More padding */
+        transition: all 0.3s ease;
+      }
+
+      .form-control::placeholder,
+      .form-select::placeholder {
+        color: #a0aec0; /* Lighter placeholder color */
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        background-color: #374151; /* Darker on focus */
+        border-color: #1F6FEB; /* Accent border on focus */
+        box-shadow: 0 0 0 0.25rem rgba(167, 139, 250, 0.25); /* Accent glow on focus */
+        color: #f9fafb;
+      }
+
+      /* Adjust input group text when input is focused */
+      .form-control:focus + .input-group-text,
+      .form-select:focus + .input-group-text,
+      .input-group:focus-within .input-group-text {
+        border-color: #1F6FEB;
+        background-color: #1F6FEB;
+      }
+
+      /* Invalid feedback (error messages) */
+      .invalid-feedback {
+        color: #f472b6; /* A soft pink for error messages */
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+      }
+
+      /* Checkbox/Radio Labels */
+      .form-check-label {
+        color: #f9fafb;
+      }
+
+      /* Custom styles for radio buttons to match horizontal layout */
+      .form-check-horizontal {
+        padding-top: calc(0.375rem + 1px); /* Align with input height */
+      }
+
+      /* Custom message box for validation */
+      #form-message {
+        display: none;
+        margin-top: 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+      }
+
+      /* Submit Button */
+      .btn-warning {
+        background-color: #1F6FEB; /* Use accent color for button */
+        border-color: #1F6FEB;
+        color: #f9fafb; /* Light text */
+        font-weight: 600;
+        padding: 0.8rem 2.5rem; /* More generous padding */
+        border-radius: 0.75rem; /* More rounded button */
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(167, 139, 250, 0.3); /* Button shadow */
+      }
+
+      .btn-warning:hover {
+        background-color: #c4b5fd; /* Lighter on hover */
+        border-color: #c4b5fd;
+        transform: translateY(-3px); /* Subtle lift effect */
+        box-shadow: 0 8px 20px rgba(167, 139, 250, 0.4);
+      }
+
+      .btn-warning:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(167, 139, 250, 0.2);
+      }
+
+      /* Responsive label alignment */
+      @media (min-width: 768px) {
+        .form-label {
+          text-align: right;
+          align-self: center; /* Center vertically with input */
+          margin-bottom: 0; /* Remove bottom margin on desktop */
+        }
+      }
+      @media (max-width: 767.98px) {
+        .form-label {
+          text-align: left;
+          margin-bottom: 0.5rem;
+        }
+        .form-container {
+          padding: 1.5rem;
+        }
+        .form-title {
+          font-size: 2rem;
+        }
+        .btn-lg {
+          width: 100%; /* Full width button on small screens */
+        }
+      }

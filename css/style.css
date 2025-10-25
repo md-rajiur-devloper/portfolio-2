@@ -6,14 +6,16 @@
 }
 body{
     background-color: #0d1117;
+    scroll-behavior: smooth;
 }
 :root{
     --text-color: #1F6FEB;
     --title-color: #fff;
     --peragraph-color:#e5e7eb;
     --card-color:#161d27;
-
 }
+
+
 /* Hader Page Start */
 .main-hader{
     background-color:0, 0, 0, 0.5;
@@ -28,15 +30,36 @@ body{
 }
 .main-hader .my-list .my-li-style{
     padding: 10px 20px;
-    color: #ffff !important;
+    color: #fff !important;
     transition: 0.4s;
     opacity: 1;
-    z-index: 1;
+    position: relative;
 }
-.main-hader .my-list .my-li-style:hover{
-    border-bottom: 2px solid var(--text-color);
-    color: var(--text-color);
+
+.main-hader li>a::after {
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: var(--text-color);
+    position: absolute;
+    /* bottom: -38px; */
+    left: 50%;
+    top: 55px;
+    transform: translateX(-50%);
+    transition: 0.5s;
 }
+.main-hader li>a:hover::after {
+    border-bottom: 3px solid var(--text-color);
+    /* color: var(--text-color); */
+    width: calc(100%);
+    top: 55px;
+    border-radius: 10px;
+}
+/* .main-hader .my-list .my-li-style:hover {
+    width: calc(100% + 20px);
+} */
+
+
 /* InterDecTion Page Start  */
 
 .inderdection-page img{
@@ -58,7 +81,7 @@ body{
     background-color:#171e29;
     color: var(--title-color);
     /* margin-left: 20px; */
-    box-shadow: 0.5px 1px 8px #e5e7eb;
+   
 }
 .main-card .card i{
     color: var(--text-color);
@@ -67,6 +90,7 @@ body{
 .main-card .card:hover {
   transform: scale(1.05);
    transition: 0.8s;
+    box-shadow: 0.5px 1px 8px #e5e7eb;
 }
 /* Services Section Start */
 .services-section .services-title {
@@ -76,11 +100,12 @@ body{
     background-color:#171e29;
     color: var(--title-color);
     /* margin-left: 20px; */
-    box-shadow: 0.5px 1px 8px #e5e7eb;
+   
 }
 .services-section .card:hover{
     transform: scale(1.05);
     transition: 0.8s;
+    box-shadow: 0.5px 1px 8px #e5e7eb;
 }
 .services-section .card h2{
     color: var(--text-color);
@@ -99,8 +124,16 @@ body{
     margin-bottom: 10px;
 }
 
+.clint-fidbeck .card:hover .card-body img{
+   transform:rotateY(180deg);
+   transition: 1.8s;
+}
+.clint-fidbeck .card:hover .card-body {
+     transform:rotateY(180deg);
+   transition: 1.8s;
+}
 .clint-fidbeck .card:hover {
-  transform:rotateX(360deg);
+  transform:rotateY(180deg);
    transition: 1.8s;
 }
 .clint-fidbeck .card h3{
@@ -123,9 +156,14 @@ body{
 
 /* ClientTestimonials Start */
 .ClientTestimonials .card:hover {
-  transform:rotateX(360deg);
+  transform:rotateX(180deg);
    transition: 1.8s;
 }
+.ClientTestimonials .card:hover .card-body{
+      transform:rotateX(180deg);
+   transition: 1.8s;
+}
+
 .ClientTestimonials .ClientTestimonials-heder{
     color: var(--title-color);
     padding: 40px 0;
